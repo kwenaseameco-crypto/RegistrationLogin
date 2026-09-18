@@ -105,11 +105,11 @@ public class Login {
      */
     public String registerUser() {
         if (!checkUserName()) {
-            return "Username is not correctly formatted. Please ensure that your username contains an underscore and is not longer than five characters in length.";
+            return "Username is not correctly formatted; please ensure that your username contains an underscore and is not longer than five characters in length.";
         }
 
         if (!checkPasswordComplexity()) {
-            return "Password is not correctly formattedP please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+            return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
         }
 
         if (!checkCellPhoneNumber()) {
@@ -143,14 +143,14 @@ public class Login {
         if (checkUserName()) {
             return "Username successfully captured.";
         }
-        return "Username is not correctly formatted. Please ensure that your username contains an underscore and is no more than five characters in length.";
+        return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
     }
 
     public String getPasswordMessage() {
         if (checkPasswordComplexity()) {
             return "Password successfully captured.";
         }
-        return "Password is not correctly formatted. Please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+        return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
     }
 
     public String getCellPhoneMessage() {

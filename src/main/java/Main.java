@@ -31,7 +31,7 @@ public class Main {
         System.out.println(login.registerUser());
 
         if (!login.checkUserName() || !login.checkPasswordComplexity() || !login.checkCellPhoneNumber()) {
-            System.out.println("Registration failed. Please restart the application and try again. Thank you.");
+            System.out.println("Registration failed. Please restart the application and try again.");
             input.close();
             return;
         }
